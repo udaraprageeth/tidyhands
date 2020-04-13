@@ -1,0 +1,57 @@
+/* Navbar Styles */
+/* line 3, ../iConn io Projects/Web Projects/tidyhands/scss/style.scss */
+.navbar {
+  background: #074785;
+  background: linear-gradient(180deg, #074785 0%, rgba(42, 130, 217, 0) 100%);
+  height: 120px;
+}
+
+/* line 9, ../iConn io Projects/Web Projects/tidyhands/scss/style.scss */
+.navbar .nav-link {
+  color: white !important;
+}
+
+/* line 14, ../iConn io Projects/Web Projects/tidyhands/scss/style.scss */
+.header-section {
+  background: url(../images/main-background.svg);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 -100px;
+}
+
+/* line 22, ../iConn io Projects/Web Projects/tidyhands/scss/style.scss */
+.header-section .overlay {
+  background-color: rgba(2, 136, 193, 0.74);
+  height: 100%;
+  position: relative;
+}
+
+/* line 27, ../iConn io Projects/Web Projects/tidyhands/scss/style.scss */
+.header-section .overlay .overlay-logo {
+  position: absolute;
+}
+
+/* line 31, ../iConn io Projects/Web Projects/tidyhands/scss/style.scss */
+.header-section .overlay .overlay-girl {
+  position: absolute;
+}
+
+/* line 41, ../iConn io Projects/Web Projects/tidyhands/scss/style.scss */
+header .jumbo-text h1 {
+  color: white;
+  font-size: 70px;
+  margin-bottom: 0;
+}
+
+/* line 49, ../iConn io Projects/Web Projects/tidyhands/scss/style.scss */
+.btn-primary {
+  color: #2A82D9;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 20px;
+  padding: 7px 33px;
+}
+
+/*# sourceMappingURL=style.css.map */

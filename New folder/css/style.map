@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"\r\n/* Navbar Styles */\r\n.navbar {\r\n    background: rgb(7,71,133);\r\n    background: linear-gradient(180deg, rgba(7,71,133,1) 0%, rgba(42,130,217,0) 100%);\r\n    height: 120px;\r\n\r\n    \r\n    .nav-link {\r\n        color: white !important;\r\n    }\r\n}\r\n\r\n.header-section{\r\n    background: url(../images/main-background.svg) ;\r\n    background-size: cover;\r\n    height: 100vh;\r\n    background-repeat: no-repeat;\r\n    background-attachment: fixed;\r\n    background-position: 0 -100px;\r\n\r\n    .overlay {\r\n        background-color: rgba(2, 136, 193, 0.74);\r\n        height: 100%;\r\n        position: relative;\r\n\r\n        .overlay-logo{\r\n            position: absolute;\r\n        }\r\n\r\n        .overlay-girl{\r\n            position: absolute;\r\n        }\r\n    }\r\n}\r\n\r\nheader {\r\n    .jumbo-text {\r\n       // margin-top: 250px; \r\n\r\n        h1 {\r\n            color: white;\r\n            font-size: 70px;\r\n            margin-bottom: 0;\r\n        }\r\n    }\r\n}\r\n\r\n.btn-primary {\r\n    color: #2A82D9;\r\n    background-color: #ffffff;\r\n    border-color: #ffffff;\r\n    border-radius: 20px;\r\n    padding: 7px 33px;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "AACA,mBAAmB;;AACnB,AAAA,OAAO,CAAC;EACJ,UAAU,EAAE,OAAa;EACzB,UAAU,EAAE,+DAAqE;EACjF,MAAM,EAAE,KAAK;CAMhB;;;AATD,AAMI,OANG,CAMH,SAAS,CAAC;EACN,KAAK,EAAE,gBAAgB;CAC1B;;;AAGL,AAAA,eAAe,CAAA;EACX,UAAU,EAAE,kCAAkC;EAC9C,eAAe,EAAE,KAAK;EACtB,MAAM,EAAE,KAAK;EACb,iBAAiB,EAAE,SAAS;EAC5B,qBAAqB,EAAE,KAAK;EAC5B,mBAAmB,EAAE,QAAQ;CAehC;;;AArBD,AAQI,eARW,CAQX,QAAQ,CAAC;EACL,gBAAgB,EAAE,uBAAuB;EACzC,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,QAAQ;CASrB;;;AApBL,AAaQ,eAbO,CAQX,QAAQ,CAKJ,aAAa,CAAA;EACT,QAAQ,EAAE,QAAQ;CACrB;;;AAfT,AAiBQ,eAjBO,CAQX,QAAQ,CASJ,aAAa,CAAA;EACT,QAAQ,EAAE,QAAQ;CACrB;;;AAIT,AAIQ,MAJF,CACF,WAAW,CAGP,EAAE,CAAC;EACC,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,CAAC;CACnB;;;AAIT,AAAA,YAAY,CAAC;EACT,KAAK,EAAE,OAAO;EACd,gBAAgB,EAAE,OAAO;EACzB,YAAY,EAAE,OAAO;EACrB,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,QAAQ;CACpB"
+}
