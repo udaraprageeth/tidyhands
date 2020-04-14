@@ -1,6 +1,6 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Grayscale', // <title>
-  manifestName: 'Grayscale',
+  siteTitle: 'TidyHands Cleaning', // <title>
+  manifestName: 'TidyHands',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
@@ -8,8 +8,8 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/gatsby-starter-grayscale/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav Srivastava',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
+  heading: 'iConn IO Technologies',
+  subHeading: ' Web Development ',
 
   // social
   socialLinks: [

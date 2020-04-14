@@ -1,14 +1,14 @@
 {
-  "name": "gatsby-starter-grayscale",
+  "name": "TidyHands Cleaning",
   "version": "0.0.1",
-  "description": "Gatsby.js V2 starter template based on Grayscale by startbootstrap",
+  "description": "TidyHands Cleaning",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-grayscale.git"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "U Prageeth Rajapaksha",
+    "email": "udaraprageeth@gmail.com"
   },
   "dependencies": {
     "gatsby": "^2.4.3",

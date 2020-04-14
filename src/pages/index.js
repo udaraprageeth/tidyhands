@@ -14,6 +14,12 @@ import demoImage1 from '../assets/images/demo-image-01.jpg';
 import demoImage2 from '../assets/images/demo-image-02.jpg';
 import bgMaster from '../assets/images/bg-masthead.jpg';
 
+import icon1 from '../assets/img/icon-1.svg';
+import icon2 from '../assets/img/icon-2.svg';
+import icon3 from '../assets/img/icon-3.svg';
+import clients from '../assets/img/clients.png';
+
+
 const IndexPage = () => (
   <Layout>
     <Header />
@@ -21,13 +27,13 @@ const IndexPage = () => (
     <header className="masthead">
       <div className="container d-flex h-100 align-items-center">
         <div className="mx-auto text-center">
-          <h1 className="mx-auto my-0 text-uppercase">{config.heading}</h1>
-          <h2 className="text-white-50 mx-auto mt-2 mb-5">
-            {config.subHeading}
-          </h2>
+          <h1 className="mx-auto my-0">We Clean</h1>
+          <h1 className="mx-auto mt-2 mb-5">
+            You Relax
+          </h1>
           <Scroll type="id" element="about">
             <a href="#about" className="btn btn-primary">
-              About
+            Get Quote
             </a>
           </Scroll>
         </div>
@@ -35,80 +41,79 @@ const IndexPage = () => (
     </header>
 
     <section id="about" className="about-section text-center">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-8 mx-auto">
-            <h2 className="text-white mb-4">Built with Bootstrap 4</h2>
-            <p className="text-white-50">
-              Grayscale is a free Bootstrap theme created by Start Bootstrap. It
-              can be yours right now, simply download the starter on
-              <a href="https://github.com/anubhavsrivastava/gatsby-starter-grayscale">
-                the github repo
-              </a>
-              .
-            </p>
+      <div className="position-relative d-flex justify-content-center">
+      <div className="container position-absolute card-container">
+        <div className="row d-flex justify-content-between">
+          <div className="col-3">
+           <div className="card">
+            	<img src={icon1} className="img-fluid" alt="" />
+             <h6>
+              	CLEANING SERVICES
+             </h6>
+             <p>
+                With more than 5 years of combined management experience our services extend commercially across all market sectors.
+             </p>
+           </div>
+          </div>
+          <div className="col-3">
+           <div className="card">
+            	<img src={icon2} className="img-fluid" alt="" />
+             <h6>
+              	FACILITIES & ENVIRONMENTAL
+             </h6>
+             <p>
+                With more than 5 years of combined management experience our services extend commercially across all market sectors.
+             </p>
+           </div>
+          </div>
+          <div className="col-3">
+           <div className="card">
+            	<img src={icon3} className="img-fluid" alt="" />
+             <h6>
+                PROPERTY MAINTENANCE
+             </h6>
+             <p>
+                With more than 5 years of combined management experience our services extend commercially across all market sectors.
+             </p>
+           </div>
           </div>
         </div>
-        <img src={ipad} className="img-fluid" alt="" />
+      </div>
+      </div>
+      <div className="container client-logo d-flex align-items-end">
+
+        <img className="img-fluid  clients" src={clients} alt="" />
       </div>
     </section>
 
-    <section id="projects" className="projects-section bg-light">
-      <div className="container">
-        <div className="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div className="col-xl-8 col-lg-7">
-            <img className="img-fluid mb-3 mb-lg-0" src={bgMaster} alt="" />
+    <section id="projects" className="projects-section">
+      <div className="container  h-100">
+        <div className="row  h-100 d-flex justify-content-between">
+          <div className="col-6 d-flex align-items-center">
+            <h3>Do you want to order our services easily and get a quote directly</h3>
           </div>
-          <div className="col-xl-4 col-lg-5">
-            <div className="featured-text text-center text-lg-left">
-              <h4>Shoreline</h4>
-              <p className="text-black-50 mb-0">
-                Grayscale is open source and MIT licensed. This means you can
-                use it for any project - even commercial projects! Download it,
-                customize it, and publish your website!
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
-          <div className="col-lg-6">
-            <img className="img-fluid" src={demoImage1} alt="" />
-          </div>
-          <div className="col-lg-6">
-            <div className="bg-black text-center h-100 project">
-              <div className="d-flex h-100">
-                <div className="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 className="text-white">Misty</h4>
-                  <p className="mb-0 text-white-50">
-                    An example of where you can put an image of a project, or
-                    anything else, along with a description.
-                  </p>
-                  <hr className="d-none d-lg-block mb-0 ml-0" />
-                </div>
+          <div className="col-4 d-flex align-items-center">
+            <form className="w-100">
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Full Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your full name" />
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row justify-content-center no-gutters">
-          <div className="col-lg-6">
-            <img className="img-fluid" src={demoImage2} alt="" />
-          </div>
-          <div className="col-lg-6 order-lg-first">
-            <div className="bg-black text-center h-100 project">
-              <div className="d-flex h-100">
-                <div className="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 className="text-white">Mountains</h4>
-                  <p className="mb-0 text-white-50">
-                    Another example of a project with its respective
-                    description. These sections work well responsively as well,
-                    try this theme on a small screen!
-                  </p>
-                  <hr className="d-none d-lg-block mb-0 mr-0" />
-                </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com" />
               </div>
-            </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Phone</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your phone number" />
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Short Description</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="form-group ">
+                <button className="btn btn-primary w-100 mt-4">Book My Clean</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -116,7 +121,6 @@ const IndexPage = () => (
 
     <Subscribe />
 
-    <SocialLinks />
     <Footer />
   </Layout>
 );

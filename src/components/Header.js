@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Scroll from './Scroll';
 import config from '../../config';
+import logo from '../assets/img/Logo.svg';
 export default class Header extends Component {
   constructor(props) {
     super(props);
@@ -41,7 +42,7 @@ export default class Header extends Component {
       >
         <div className="container">
           <a className="navbar-brand" href="#page-top">
-            {config.siteTitle}
+          <img src={logo} className="img-fluid" alt="" />
           </a>
           <button
             onClick={_ => this.toggleMenu(!openMenu)}
@@ -60,7 +61,7 @@ export default class Header extends Component {
             className={`collapse navbar-collapse ${openMenu ? 'show' : ''}`}
             id="navbarResponsive"
           >
-            <ul className="navbar-nav ml-auto">
+            <ul className="navbar-nav ml-auto d-flex align-items-center">
               <li className="nav-item">
                 <Scroll
                   onClick={_ => this.toggleMenu(!openMenu)}
@@ -68,7 +69,7 @@ export default class Header extends Component {
                   element="about"
                 >
                   <a className="nav-link" href="#about">
-                    About
+                  SERVICES
                   </a>
                 </Scroll>
               </li>
@@ -79,7 +80,7 @@ export default class Header extends Component {
                   element="projects"
                 >
                   <a className="nav-link" href="#projects">
-                    Projects
+                  CONTACT US
                   </a>
                 </Scroll>
               </li>
@@ -90,10 +91,22 @@ export default class Header extends Component {
                   element="signup"
                 >
                   <a className="nav-link" href="#signup">
-                    Contact
+                    ABOUT US
                   </a>
                 </Scroll>
               </li>
+              <li className="nav-item">
+                <Scroll
+                  onClick={_ => this.toggleMenu(!openMenu)}
+                  type="id"
+                  element="signup"
+                >
+                  <a href="#about" className="btn btn-primary">
+                  Get Quote
+                  </a>
+                </Scroll>
+              </li>
+              
             </ul>
           </div>
         </div>

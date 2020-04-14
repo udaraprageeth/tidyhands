@@ -1,22 +1,52 @@
 .projects-section {
-  padding: 10rem 0;
-  .featured-text {
-    padding: 2rem;
-    @media (min-width: 992px) {
-      padding: 0 0 0 2rem;
-      border-left: 0.5rem solid $primary;
-    }
+  background: linear-gradient(
+      to bottom,
+      #{fade-out($primary, 0.5)} 0%,
+      #{fade-out($primary, 0.1)} 75%,
+      $primary 100%
+    ),
+    url('../img/Background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 80vh;
+
+  h3 {
+    color: $white;
   }
-  .project-text {
-    padding: 3rem;
-    font-size: 90%;
-    @media (min-width: 992px) {
-      padding: 5rem;
-      hr {
-        border-color: $primary;
-        border-width: .25rem;
-        width: 30%;
+
+  form {
+    label {
+      color: $white;
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+
+    .form-group{
+
+      color: $white;
+      .form-control {
+        background-color: transparent;
+        border-bottom: 1px solid $white;
+        border: none;
+            border-bottom-color: currentcolor;
+            border-bottom-style: none;
+            border-bottom-width: medium;
+        border-bottom: 2px solid $white;
+        border-radius: 0;
+        color: $white;
       }
+
+      textarea{
+        max-height: 60px;
+      }
+    }
+    
+    ::placeholder{
+      color: $white;
+      font-size: 14px;
+      opacity: 0.5;
     }
   }
 }

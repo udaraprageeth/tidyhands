@@ -18,7 +18,7 @@
   .navbar-nav {
     .nav-item {
       &:hover {
-        color: fade(white, 80%);
+        color: fade($white, 80%);
         outline: none;
         background-color: transparent;
       }
@@ -51,24 +51,24 @@
       }
     }
     &.navbar-shrink {
-      background-color: $white;
+      background-color: $primary;
       .navbar-brand {
         color: $black;
       }
       .nav-link {
-        color: $black;
+        color: $white;
         padding: 1.5rem 1.5rem 1.25rem;
         border-bottom: 0.25rem solid transparent;
         &:hover {
-          color: $primary;
+          color: $white;
         }
         &:active {
-          color: darken($primary, 15%);
+          color: darken($white, 15%);
         }
         &.active {
-          color: $primary;
+          color: $white;
           outline: none;
-          border-bottom: 0.25rem solid $primary;
+          border-bottom: 0.25rem solid $white;
         }
       }
     }

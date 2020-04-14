@@ -1,23 +1,26 @@
 .btn {
   box-shadow: 0 .1875rem .1875rem 0 rgba(0,0,0,.1) !important;
-  padding: 1.25rem 2rem;
-  font-family: 'Varela Round';
+  padding: 15px 30px;
+  font-family: $primary-font;
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: .15rem;
   border: 0;
+  border-radius: 28px;
 }
 
 .btn-primary {
-  background-color: $primary;
+  background-color: $white;
+  color: $primary;
   &:hover {
-    background-color: darken($primary, 10%);
+    background-color: darken($white, 10%);
+    color: $primary;
   }
   &:focus {
-    background-color: darken($primary, 10%);
-    color: white;
+    background-color: darken($white, 10%);
+    color: $primary;
   }
   &:active {
-    background-color: darken($primary, 15%) !important;
+    background-color: darken($white, 15%) !important;
   }
 }
